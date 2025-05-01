@@ -333,24 +333,7 @@ service & works
   padding: 8px 0;
   position: relative;
   text-align: center;
-}
-#service .item .text .btn::before {
-  content: "";
-  width: 11px;
-  height: 1px;
-  background-color: #121212;
-  position: absolute;
-  top: 17px;
-  right: 14px;
-}
-#service .item .text .btn::after {
-  content: "";
-  width: 1px;
-  height: 11px;
-  background-color: #121212;
-  position: absolute;
-  top: 12px;
-  right: 19px;
+  margin: 0 auto;
 }
 
 
@@ -566,6 +549,7 @@ Footer
     #recruit .item .img {
       max-width: 100%;
       margin-bottom: 20px;
+      margin: 0 auto;
     }
     #recruit .item .text {
       max-width: 100%;
