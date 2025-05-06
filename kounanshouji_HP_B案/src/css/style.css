@@ -30,7 +30,7 @@ a:hover {
 
 .wrapper {
   max-width: 1240px;
-  padding: 0 80px;
+  padding: 80px;
   margin: 0 auto;
 }
 
@@ -280,7 +280,7 @@ concept
 
 #concept .text {
   line-height: 2.5;
-  padding: 0 80px;
+  padding: 0 40px;
 }
 
 #concept .img {
@@ -299,7 +299,7 @@ concept
 service & works
 -------------------------------------------*/
 #service {
-  padding-top: 80px;
+  padding: 40px;
 }
 
 #service .item {
@@ -391,7 +391,7 @@ recruit
 
 
 #recruit {
-  padding-top: 80px;
+  padding: 80px;
 }
 
 #recruit .item {
@@ -472,7 +472,7 @@ contact
 -------------------------------------------*/
 #contact {
   background-color: #f2f9fd;
-  padding: 200px 0 60px;
+  padding: 150px 0;
   position: relative;
 }
 
@@ -566,7 +566,7 @@ Footer
 
   #concept .title {
     font-size: 34px;
-    margin-bottom: 20px;
+    margin: 40px;
   }
 
   #concept .text {
@@ -578,7 +578,7 @@ Footer
   service & works
   -------------------------------------------*/
   #service {
-    padding-top: 40px;
+    padding: 40px;
   }
 
   #service .item.service {
@@ -622,7 +622,7 @@ Footer
 
 
   #recruit {
-    padding-top: 40px;
+    padding: 40px;
   }
 
   #recruit .item.recruit {
