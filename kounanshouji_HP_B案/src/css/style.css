@@ -30,7 +30,7 @@ a:hover {
 
 .wrapper {
   max-width: 1240px;
-  padding: 80px;
+  padding: 40px;
   margin: 0 auto;
 }
 
@@ -369,27 +369,11 @@ h4 {
   margin-bottom: 30px;
 }
 
-h4::before {
-  content: '';
-  border-top: 1px solid #121212;
-  display: block;
-  position: absolute;
-  width: 200px;
-  top: calc(50% - 2px);
-}
-
-h4 span {
-  background-color: #fff;
-  padding: 0 20px;
-  position: relative;
-}
 
 
 /*-------------------------------------------
 recruit
 -------------------------------------------*/
-
-
 #recruit {
   padding: 80px;
 }
@@ -465,6 +449,13 @@ recruit
   transform: translateY(5px);
   box-shadow: none;
 }
+
+
+
+
+
+
+
 
 
 /*-------------------------------------------
@@ -666,7 +657,7 @@ Footer
   #contact .head-text {
     font-size: 14px;
     margin-bottom: 30px;
-    padding: 0 80px;
+    padding: 0 40px;
   }
 
 
