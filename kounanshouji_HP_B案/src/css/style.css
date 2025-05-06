@@ -35,7 +35,7 @@ a:hover {
 }
 
 .section-title {
-  margin-bottom: 60px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -401,7 +401,7 @@ recruit
 #recruit .item .text .content-title {
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   justify-content: center;
   text-align: center;
 }
