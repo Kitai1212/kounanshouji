@@ -336,7 +336,7 @@ service & works
 }
 
 #service .item .text .description {
-  height: 80px;
+  height: auto;
   line-height: 1.8;
   margin-bottom: 30px;
   overflow: hidden;
