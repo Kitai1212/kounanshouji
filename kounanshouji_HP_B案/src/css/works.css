@@ -321,6 +321,7 @@ Works
 #works .works-list {
   display: flex;
   flex-wrap: wrap;
+  padding: 20px 40px 40px 40px;
 }
 #works .works-list li {
   width: 32%;
@@ -335,15 +336,19 @@ Works
 
 
 #works img {
-    width: 21%;
-    margin: 2%;
-    height: 180px;
+    height: auto;
     line-height: 180px;
     text-align: center;
 }
 
+#works p {
+    text-align: center;
+}
 
-
+.category {
+  border-bottom: solid 1px #ccc;
+  margin: 10px 40px;
+}
 
 
 
