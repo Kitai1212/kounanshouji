@@ -15,14 +15,37 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </head>
 
 
 <!-- header -->
 
 
+
+  /*-------------------------------
+  ハンバーガーメニュー
+  ---------------------------------*/
+  <script>
+	document.addEventListener("DOMContentLoaded", function() {
+		const toggle = document.getElementById("site-nav__toggle");
+		const menuItems = document.querySelectorAll(".main-nav__item a");
+	
+		// メニューリンクをクリックしたらハンバーガーメニューを閉じる
+		menuItems.forEach(item => {
+			item.addEventListener("click", function() {
+				toggle.checked = false;
+			});
+		});
+	});
+	</script>
+
+
+
+
+
 <body>
+
   <header class="site-header">
     <h1 class="site-logo">
       <a href="index.html">光南商事株式会社</a>
@@ -36,13 +59,13 @@
       </label>
       <ul class="main-nav">
         <li class="main-nav__item">
-          <a href="#">HOME</a>
+          <a href="index.html">HOME</a>
         </li>
         <li class="main-nav__item">
           <a href="#service">SERVICE</a>
         </li>
         <li class="main-nav__item">
-          <a href=".work">WORKS</a>
+          <a href="#works">WORKS</a>
         </li>
         <li class="main-nav__item">
           <a href="#recruit">RECRUIT</a>
@@ -70,25 +93,25 @@
     </div>
 
 
-      <!-- concept -->
+    <!-- concept -->
 
 
-      <div id="concept">
-        <p class="title">美しさを極める、確かな技術</p>
-        <p class="text">
-          テキストテキストテキストテキストテキストテキストテキストテキスト<br>
-          テキストテキストテキストテキストテキストテキストテキストテキスト<br>
-          テキストテキストテキストテキストテキストテキストテキストテキスト<br>
-          テキストテキストテキストテキストテキストテキストテキストテキスト<br>
-          テキストテキストテキストテキストテキストテキストテキストテキスト</p>
-      </div>
+    <div id="concept">
+      <p class="title">美しさを極める、確かな技術</p>
+      <p class="text">
+        テキストテキストテキストテキストテキストテキストテキストテキスト<br>
+        テキストテキストテキストテキストテキストテキストテキストテキスト<br>
+        テキストテキストテキストテキストテキストテキストテキストテキスト<br>
+        テキストテキストテキストテキストテキストテキストテキストテキスト<br>
+        テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+    </div>
 
 
-      <!-- service & works -->
+    <!-- service & works -->
 
 
-      <section id="service">
-        <div class="color">
+    <section id="service">
+      <div class="color">
         <h2 class="section-title">
         </h2>
 
@@ -111,8 +134,9 @@
           </div>
         </div>
 
-
+        <div id="works"></div>
         <div class="item works">
+          
           <div class="text">
             <h3 class="content-title">
               <span class="title-text">WORKS</span>
@@ -124,98 +148,99 @@
               これまでに手掛けた美装施工事例の一部をご紹介。
               お客様の多様なニーズに対応し、細部までこだわった仕上がりを是非ご覧ください。
             </p>
-            <div class="btn">詳しく見る</div>
+            <a class="btn" href="works.html">詳しく見る</a>
           </div>
           <div class="img">
             <img src="img/works.png" alt="">
           </div>
         </div>
+      </div>
+      </div>
+    </section>
+
+
+    <!-- recruit -->
+
+
+    <section id="recruit" class="wrapper">
+      <h2 class="section-title">
+      </h2>
+
+      <div class="item recruit">
+        <div class="img">
+          <img src="img/recruit.jpg" alt="">
         </div>
-      </section>
+        <div class="text">
+          <h3 class="content-title">
+            <span class="title-text">RECRUIT</span>
+          </h3>
+          <h4>
+            <span>求人情報</span>
+          </h4>
+          <p class="description">
+            現在、求人を募集しております。エントリーご希望の方は下記ボタンからご応募ください。
+          </p>
+          <a class="btn" href="recruit.html">
+            <img class="arrow" src="img/icon-arrow.svg" alt="">応募はこちら
+          </a>
+        </div>
+    </section>
 
 
-      <!-- recruit -->
+    <!-- contact -->
 
 
-      <section id="recruit" class="wrapper">
-        <h2 class="section-title">
-        </h2>
+    <section id="contact">
+      <h2 class="section-title">
+        <p class="text">CONTACT</p>
+      </h2>
+      <h4>
+        <span>お問い合わせ</span>
+      </h4>
 
-        <div class="item recruit">
-          <div class="img">
-            <img src="img/recruit.jpg" alt="">
-          </div>
-          <div class="text">
-            <h3 class="content-title">
-              <span class="title-text">RECRUIT</span>
-            </h3>
-            <h4>
-              <span>求人情報</span>
-            </h4>
-            <p class="description">
-              現在、求人を募集しております。エントリーご希望の方は下記ボタンからご応募ください。
-            </p>
-            <a class="btn" href="">
-              <img class="arrow" src="img/icon-arrow.svg" alt="">応募はこちら
-            </a>
-          </div>
-      </section>
+      <p class="head-text">
+        ご意見・お仕事の依頼等は、下記電話番号またはメールアドレスからお気軽にご連絡ください。<br>
+        <br>
+        086-233-2223<br>
+        info@xxxxxxxxxx.xxx
+      </p>
+    </section>
 
 
-      <!-- contact -->
+    <!-- company -->
 
 
-      <section id="contact">
-        <h2 class="section-title">
-          <p class="text">CONTACT</p>
-        </h2>
-        <h4>
-          <span>お問い合わせ</span>
-        </h4>
-
-        <p class="head-text">
-          ご意見・お仕事の依頼等は、下記電話番号またはメールアドレスからお気軽にご連絡ください。<br>
-          <br>
-          086-233-2223<br>
-          info@xxxxxxxxxx.xxx
-        </p>
-      </section>
-
-
-      <!-- company -->
-
-
-      <section id="company">
-        <h2 class="section-title">
-          <p class="text">COMPANY</p>
-        </h2>
-        <h4>
-          <span>会社概要</span>
-        </h4>
-        <div class="inner wrapper">
-          <div class="item company">
-            <dl class="info">
-              <dt>社名</dt>
-              <dd>光南商事株式会社</dd>
-              <dt>住所</dt>
-              <dd>岡山県岡山市南区下中野48-5</dd>
-              <dt>代表取締役</dt>
-              <dd>森本英男</dd>
-              <dt>Tel</dt>
-              <dd><a href="tel:0862332223">086-233-2223</a></dd>
-              <dt>Mail</dt>
-              <dd><a href="mailto:info@xxxxxxxx.xxx">info@xxxxxxxx.xxx</a></dd>
-            </dl>
-            <div class="map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.536351796616!2d133.90933427574183!3d34.64115527294098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3554079ba771577f%3A0x767778bf28eed321!2z44CSNzAwLTA5NzMg5bKh5bGx55yM5bKh5bGx5biC5Y2X5Yy65LiL5Lit6YeO77yU77yY4oiS77yVIOWFieWNl-WVhuS6iw!5e0!3m2!1sja!2sjp!4v1746506047220!5m2!1sja!2sjp"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">" width="600" height="450" style="border:0;"
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+    <section id="company">
+      <h2 class="section-title">
+        <p class="text">COMPANY</p>
+      </h2>
+      <h4>
+        <span>会社概要</span>
+      </h4>
+      <div class="inner wrapper">
+        <div class="item company">
+          <dl class="info">
+            <dt>社名</dt>
+            <dd>光南商事株式会社</dd>
+            <dt>住所</dt>
+            <dd>岡山県岡山市南区下中野48-5</dd>
+            <dt>代表取締役</dt>
+            <dd>森本英男</dd>
+            <dt>Tel</dt>
+            <dd><a href="tel:0862332223">086-233-2223</a></dd>
+            <dt>Mail</dt>
+            <dd><a href="mailto:info@xxxxxxxx.xxx">info@xxxxxxxx.xxx</a></dd>
+          </dl>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.536351796616!2d133.90933427574183!3d34.64115527294098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3554079ba771577f%3A0x767778bf28eed321!2z44CSNzAwLTA5NzMg5bKh5bGx55yM5bKh5bGx5biC5Y2X5Yy65LiL5Lit6YeO77yU77yY4oiS77yVIOWFieWNl-WVhuS6iw!5e0!3m2!1sja!2sjp!4v1746506047220!5m2!1sja!2sjp"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">" width="600" height="450" style="border:0;"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
 
 
