@@ -23,22 +23,22 @@
 
 
 
-  /*-------------------------------
-  ハンバーガーメニュー
-  ---------------------------------*/
-  <script>
-	document.addEventListener("DOMContentLoaded", function() {
-		const toggle = document.getElementById("site-nav__toggle");
-		const menuItems = document.querySelectorAll(".main-nav__item a");
-	
-		// メニューリンクをクリックしたらハンバーガーメニューを閉じる
-		menuItems.forEach(item => {
-			item.addEventListener("click", function() {
-				toggle.checked = false;
-			});
-		});
-	});
-	</script>
+/*-------------------------------
+ハンバーガーメニュー
+---------------------------------*/
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.getElementById("site-nav__toggle");
+    const menuItems = document.querySelectorAll(".main-nav__item a");
+
+    // メニューリンクをクリックしたらハンバーガーメニューを閉じる
+    menuItems.forEach(item => {
+      item.addEventListener("click", function () {
+        toggle.checked = false;
+      });
+    });
+  });
+</script>
 
 
 
@@ -136,7 +136,7 @@
 
         <div id="works"></div>
         <div class="item works">
-          
+
           <div class="text">
             <h3 class="content-title">
               <span class="title-text">WORKS</span>
