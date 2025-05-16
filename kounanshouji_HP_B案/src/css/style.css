@@ -326,6 +326,11 @@ concept
   z-index: -10;
 }
 
+.br-sp {
+  display: none;
+}
+
+
 
 /*-------------------------------------------
 service & works
@@ -613,12 +618,16 @@ Footer
 
   #concept .title {
     font-size: 34px;
-    margin: 40px;
+    margin: 10px;
   }
 
   #concept .text {
     font-size: 14px;
   }
+
+.br-sp {
+  display: block;
+}
 
 
   /*-------------------------------------------
