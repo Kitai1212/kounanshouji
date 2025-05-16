@@ -285,12 +285,11 @@ concept
 #concept .title {
   font-size: 36px;
   font-weight: bold;
-  margin-bottom: 50px;
 }
 
 #concept .text {
   line-height: 2.5;
-  padding: 0 40px;
+  padding: 20px 40px;
 }
 
 #concept .img {
@@ -305,7 +304,28 @@ concept
 }
 
 
+span {
+  display: flex;
+  align-items: center;
+  max-width: 200px;
+  margin: 0 auto;
+}
 
+span::before,
+span::after {
+  content: "";
+  height: 1px;
+  flex-grow: 1;
+  background-color: #121212;
+}
+
+span::before {
+  margin-right: 1rem;
+}
+
+span::after {
+  margin-left: 1rem;
+}
 
 
 

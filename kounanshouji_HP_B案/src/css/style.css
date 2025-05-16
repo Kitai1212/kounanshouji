@@ -61,6 +61,29 @@ a:hover {
   margin: -10px auto 0;
 }
 
+span {
+  display: flex;
+  align-items: center;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+span::before,
+span::after {
+  content: "";
+  height: 1px;
+  flex-grow: 1;
+  background-color: #121212;
+}
+
+span::before {
+  margin-right: 1rem;
+}
+
+span::after {
+  margin-left: 1rem;
+}
+
 
 
 
@@ -494,6 +517,7 @@ contact
   margin-bottom: 40px;
   text-align: center;
 }
+
 
 
 /*-------------------------------------------
