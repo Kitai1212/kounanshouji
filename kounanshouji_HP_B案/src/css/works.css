@@ -304,26 +304,26 @@ concept
 }
 
 
-span {
+.jp-title {
   display: flex;
   align-items: center;
   max-width: 200px;
   margin: 0 auto;
 }
 
-span::before,
-span::after {
+.jp-title::before,
+.jp-title::after {
   content: "";
   height: 1px;
   flex-grow: 1;
   background-color: #121212;
 }
 
-span::before {
+.jp-title::before {
   margin-right: 1rem;
 }
 
-span::after {
+.jp-title::after {
   margin-left: 1rem;
 }
 
