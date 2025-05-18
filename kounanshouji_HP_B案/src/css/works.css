@@ -127,7 +127,7 @@ header
   .site-header .site-logo {
     display: inline-block;
     width: 200px;
-    padding: 0 0 0 20px;
+    padding: 20px 0 20px 20px;
   }
 }
 
@@ -361,15 +361,18 @@ Works
 #works {
   margin-bottom: 120px;
 }
+
 #works .works-list {
   display: flex;
   flex-wrap: wrap;
   padding: 20px 40px 40px 40px;
 }
+
 #works .works-list li {
   width: 32%;
   margin: 0 2% 2% 0;
 }
+
 #works .works-list li:nth-child(3n) {
   margin-right: 0;
 }
@@ -379,13 +382,13 @@ Works
 
 
 #works img {
-    height: auto;
-    line-height: 180px;
-    text-align: center;
+  height: auto;
+  line-height: 180px;
+  text-align: center;
 }
 
 #works p {
-    text-align: center;
+  text-align: center;
 }
 
 .category {
@@ -440,7 +443,7 @@ Footer
   }
 
 
-  
+
 
   /*-------------------------------------------
   concept
@@ -467,9 +470,11 @@ Footer
   #works {
     margin-bottom: 60px;
   }
+
   #works .works-list {
     flex-direction: column;
   }
+
   #works .works-list li {
     width: 100%;
     margin: 0 0 20px;
@@ -481,8 +486,6 @@ Footer
 
 
 
-  /*-------------------------------------------
+/*-------------------------------------------
   Footer
   -------------------------------------------*/
-
-
