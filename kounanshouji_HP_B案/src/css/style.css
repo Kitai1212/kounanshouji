@@ -108,14 +108,14 @@ header
 
 @media (min-width:768px) {
   .site-header {
-    background: #f2f9fd;
+    background: #E5F4F6;
     align-items: center;
     justify-content: space-between;
   }
 }
 
 .site-header .site-logo {
-  background: #f2f9fd;
+  background: #E5F4F6;
   font-size: 18px;
   margin: 0;
   padding: 20px 0 20px 20px;
@@ -162,7 +162,7 @@ header
 }
 
 .site-header .main-nav__item a {
-  background: #f2f9fd;
+  background: #E5F4F6;
   display: block;
   padding: 15px;
   border-top: 1px solid #ccc;
@@ -336,7 +336,7 @@ concept
 service & works
 -------------------------------------------*/
 #service {
-  background-color: #f2f9fd;
+  background-color: #E5F4F6;
 }
 
 #service .item {
@@ -512,18 +512,27 @@ recruit
 contact
 -------------------------------------------*/
 #contact {
-  background-color: #f2f9fd;
+background: url("../img/contact.jpg") no-repeat 100% 100% fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+	color: #fff;
+	text-align: center;
   padding: 150px 0;
-  position: relative;
 }
-
 #contact .head-text {
   line-height: 1.8;
   margin-bottom: 40px;
   text-align: center;
 }
-
-
+#contact h4 {
+  color: #fff;
+}
+#contact .jp-title::before {
+  background: #fff;
+}
+#contact .jp-title::after {
+  background: #fff;
+}
 
 /*-------------------------------------------
 company
@@ -572,7 +581,7 @@ company
 Footer
 -------------------------------------------*/
 #footer {
-  background-color: #f2f9fd;
+  background-color: #E5F4F6;
   padding: 0 20px 40px;
 }
 
@@ -625,9 +634,9 @@ Footer
     font-size: 14px;
   }
 
-.br-sp {
-  display: block;
-}
+  .br-sp {
+    display: block;
+  }
 
 
   /*-------------------------------------------

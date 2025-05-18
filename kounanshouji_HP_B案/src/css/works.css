@@ -14,7 +14,6 @@ img {
   vertical-align: bottom;
 }
 
-
 li {
   list-style: none;
 }
@@ -62,8 +61,28 @@ a:hover {
   margin: -10px auto 0;
 }
 
+.jp-title {
+  display: flex;
+  align-items: center;
+  max-width: 200px;
+  margin: 0 auto;
+}
 
+.jp-title::before,
+.jp-title::after {
+  content: "";
+  height: 1px;
+  flex-grow: 1;
+  background-color: #121212;
+}
 
+.jp-title::before {
+  margin-right: 1rem;
+}
+
+.jp-title::after {
+  margin-left: 1rem;
+}
 
 
 
@@ -89,13 +108,14 @@ header
 
 @media (min-width:768px) {
   .site-header {
-    background: #f2f9fd;
+    background: #E5F4F6;
     align-items: center;
     justify-content: space-between;
   }
 }
 
 .site-header .site-logo {
+  background: #E5F4F6;
   font-size: 18px;
   margin: 0;
   padding: 20px 0 20px 20px;
@@ -142,7 +162,7 @@ header
 }
 
 .site-header .main-nav__item a {
-  background: #f2f9fd;
+  background: #E5F4F6;
   display: block;
   padding: 15px;
   border-top: 1px solid #ccc;
@@ -382,7 +402,7 @@ Works
 Footer
 -------------------------------------------*/
 #footer {
-  background-color: #f2f9fd;
+  background-color: #E5F4F6;
   padding: 0 20px 40px;
 }
 
