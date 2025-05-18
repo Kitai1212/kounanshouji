@@ -127,7 +127,7 @@ header
   .site-header .site-logo {
     display: inline-block;
     width: 200px;
-    padding: 0 0 0 20px;
+    padding: 20px 0 20px 20px;
   }
 }
 
@@ -513,24 +513,28 @@ recruit
 contact
 -------------------------------------------*/
 #contact {
-background: url("../img/contact.jpg") no-repeat 100% 100% fixed;
-	background-size: cover;
-	-webkit-background-size: cover;
-	color: #fff;
-	text-align: center;
+  background: url("../img/contact.jpg") no-repeat 100% 100% fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  color: #fff;
+  text-align: center;
   padding: 150px 0;
 }
+
 #contact .head-text {
   line-height: 1.8;
   margin-bottom: 40px;
   text-align: center;
 }
+
 #contact h4 {
   color: #fff;
 }
+
 #contact .jp-title::before {
   background: #fff;
 }
+
 #contact .jp-title::after {
   background: #fff;
 }
